@@ -22,3 +22,7 @@ unilog.put('Test message');
 select * from UNILOG_MSGS; 
 ```
 Voilá! You're up and logging.
+
+Although "put" handles all possible logging types, there are two extra procedures for the most used cases:
+* put_with_errln - Log entry with first line of error stack
+* put_with_trace - Log entry with full error stack
